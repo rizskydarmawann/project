@@ -154,9 +154,29 @@
       {
         scrollTop: 0,
       },
-      1500,
+      1600,
       "easeInOutExpo"
     );
     return false;
   });
+  $(window).scroll(function () {
+    // Make sticky header
+    if ($(this).scrollTop() > 100) {
+      $(".menus").addClass("sticky");
+    } else {
+      $(".menus").removeClass("sticky");
+    }
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $("#header").addClass("header-scrolled");
+    } else {
+      $("#header").removeClass("header-scrolled");
+    }
+  });
+
+  //   if ($(window).scrollTop() > 100) {
+  //     $("#header").addClass("header-scrolled");
+  //   }
 })(jQuery);
