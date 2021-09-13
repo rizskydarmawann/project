@@ -1,4 +1,4 @@
-@media (max-width: 576px) {
+@media only screen and (min-width: 320px) and (max-width: 640px) {
   .menus {
     display: none;
   }
@@ -14,7 +14,7 @@
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
+@media only screen and (min-width: 720px) and (max-width: 990px) {
   .menus {
     display: none;
   }
@@ -26,26 +26,11 @@
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
-    top: -135px;
+    top: -160px;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (max-width: 992px) {
-  .menus {
-    display: none;
-  }
-  #header {
-    z-index: 997;
-  }
-
-  #header.header-scrolled {
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: 100%;
-    top: -135px;
-  }
-}
 
 @media (max-width: 1200px) {
   .nav-menu .drop-down .drop-down ul {
@@ -70,7 +55,6 @@
   .menus.sticky {
     position: fixed;
     top: 0;
-
     border-top: none;
     background: white;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);

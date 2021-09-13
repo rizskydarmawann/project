@@ -141,27 +141,28 @@
   });
 
   // Back to top button
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
-      $(".back-to-top").fadeIn("slow");
-    } else {
-      $(".back-to-top").fadeOut("slow");
-    }
-  });
+  // $(window).scroll(function () {
+  //   if ($(this).scrollTop() > 100) {
+  //     $(".back-to-top").fadeIn("slow");
+  //   } else {
+  //     $(".back-to-top").fadeOut("slow");
+  //   }
+  // });
 
-  $(".back-to-top").click(function () {
-    $("html, body").animate(
-      {
-        scrollTop: 0,
-      },
-      1600,
-      "easeInOutExpo"
-    );
-    return false;
-  });
+  // $(".back-to-top").click(function () {
+  //   $("html, body").animate(
+  //     {
+  //       scrollTop: 0,
+  //     },
+  //     1700,
+  //     "easeInOutExpo"
+  //   );
+  //   return false;
+  // });
+
   $(window).scroll(function () {
     // Make sticky header
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 200) {
       $(".menus").addClass("sticky");
     } else {
       $(".menus").removeClass("sticky");
@@ -169,14 +170,14 @@
   });
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 200) {
       $("#header").addClass("header-scrolled");
     } else {
       $("#header").removeClass("header-scrolled");
     }
   });
 
-  //   if ($(window).scrollTop() > 100) {
-  //     $("#header").addClass("header-scrolled");
-  //   }
+  if ($(window).scrollTop() > 260) {
+    $("#header").addClass("header-scrolled");
+  }
 })(jQuery);
