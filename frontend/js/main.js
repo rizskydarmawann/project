@@ -146,26 +146,6 @@
     });
   });
 
-  // Back to top button
-  // $(window).scroll(function () {
-  //   if ($(this).scrollTop() > 100) {
-  //     $(".back-to-top").fadeIn("slow");
-  //   } else {
-  //     $(".back-to-top").fadeOut("slow");
-  //   }
-  // });
-
-  // $(".back-to-top").click(function () {
-  //   $("html, body").animate(
-  //     {
-  //       scrollTop: 0,
-  //     },
-  //     1700,
-  //     "easeInOutExpo"
-  //   );
-  //   return false;
-  // });
-
   $(window).scroll(function () {
     // Make sticky header
     if ($(this).scrollTop() > 200) {
@@ -187,3 +167,36 @@
     $("#header").addClass("header-scrolled");
   }
 })(jQuery);
+
+function handleGoTop() {
+  var offset = 200;
+  var duration = 500;
+  if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+    $(window).bind("touchend touchcancel touchleave", function (e) {
+      if ($(this).scrollTop() > offset) {
+        $(".back-to-top").fadeIn(duration);
+      } else {
+        $(".back-to-top").fadeOut(duration);
+      }
+    });
+  } else {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > offset) {
+        $(".back-to-top").fadeIn(duration);
+      } else {
+        $(".back-to-top").fadeOut(duration);
+      }
+    });
+  }
+  $(".back-to-top").click(function (e) {
+    e.preventDefault();
+    $("html, body").animate(
+      {
+        scrollTop: 0,
+      },
+      duration
+    );
+    return false;
+  });
+}
+handleGoTop();

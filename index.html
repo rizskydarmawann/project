@@ -46,9 +46,8 @@
             <li class="drop-down">
               <a href="">Tentang Kami</a>
               <ul>
-                <li><a href="#">Sejarah</a></li>
-                <li><a href="#">Visi</a></li>
-                <li><a href="#">Misi</a></li>
+                <li><a href="sejarah.html">Sejarah</a></li>
+                <li><a href="vm.html">Visi dan Misi</a></li>
                 <li class="drop-down">
                   <a href="#">Deep Drop Down</a>
                   <ul>
@@ -582,9 +581,12 @@
     <script type="text/javascript">
       $(document).ready(function () {
         $("#news-slider").owlCarousel({
-          navigation: true,
-          navigationText: ["", ""],
-          autoPlay: true,
+          loop: true,
+          margin: 10,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 4000,
+          dotd: false,
           responsive: {
             0: {
               items: 1,
@@ -626,39 +628,6 @@
           },
         },
       });
-
-      function handleGoTop() {
-        var offset = 200;
-        var duration = 500;
-        if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
-          $(window).bind("touchend touchcancel touchleave", function (e) {
-            if ($(this).scrollTop() > offset) {
-              $(".back-to-top").fadeIn(duration);
-            } else {
-              $(".back-to-top").fadeOut(duration);
-            }
-          });
-        } else {
-          $(window).scroll(function () {
-            if ($(this).scrollTop() > offset) {
-              $(".back-to-top").fadeIn(duration);
-            } else {
-              $(".back-to-top").fadeOut(duration);
-            }
-          });
-        }
-        $(".back-to-top").click(function (e) {
-          e.preventDefault();
-          $("html, body").animate(
-            {
-              scrollTop: 0,
-            },
-            duration
-          );
-          return false;
-        });
-      }
-      handleGoTop();
     </script>
   </body>
 </html>
