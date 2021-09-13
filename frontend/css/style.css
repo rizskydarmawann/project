@@ -585,3 +585,9 @@ header {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+
+.section-sejarah {
+  padding-top: 40px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
