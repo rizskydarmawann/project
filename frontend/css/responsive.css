@@ -5,12 +5,73 @@
   #header {
     z-index: 997;
   }
+  #header h1 {
+    font-size: 16px;
+  }
 
   #header.header-scrolled {
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
-    top: -120px;
+    top: -100px;
   }
+
+  /* NEWS */
+  .news-grid-image {
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+  }
+
+  .news-grid-box h1 {
+    color: #fff;
+    font-size: 22px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 5px;
+  }
+
+  .news-grid-box p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .news-grid-txt span {
+    color: #26ccca;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+  .news-grid-txt h2 {
+    color: #111;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 10px 0px 5px 0px;
+  }
+
+  .news-over {
+    overflow: hidden;
+    height: 82px;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 30px;
+  }
+
+  .news-grid-txt ul li {
+    list-style: none;
+    display: inline-block;
+    color: #999;
+    font-size: 8px;
+    margin: 8px 10px 8px 0px;
+    letter-spacing: 1px;
+  }
+
+  .news-grid-txt ul li i {
+    color: #26ccca;
+    font-size: 8px;
+    margin-right: 5px;
+  }
+
+  /* NEWS */
 }
 
 /* // Medium devices (tablets, 768px and up) */

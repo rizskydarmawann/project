@@ -279,6 +279,8 @@ header {
 .owl-controls .owl-next:hover {
   background: #000;
 }
+
+/* NEWS */
 .section-news h5 {
   font-size: 28px;
   font-weight: 700;
@@ -374,13 +376,17 @@ header {
   font-weight: 500;
   margin-right: 5px;
 }
-
+.news-over {
+  overflow: hidden;
+  height: 70px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ececec;
+}
 .news-grid-txt p {
   color: #222;
   font-size: 14px;
   font-weight: 100;
   text-align: justify;
-  border-bottom: 1px solid #ececec;
   padding-bottom: 15px;
   margin-bottom: 25px;
 }
@@ -393,6 +399,7 @@ header {
   font-size: 14px;
   font-weight: 300;
   line-height: 30px;
+
   letter-spacing: 1px;
   text-decoration-line: none;
   transition: 0.5s;
