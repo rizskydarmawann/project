@@ -423,6 +423,13 @@ header {
 }
 /* NEWS */
 /* GALERY */
+.gallery-menu,
+.section-sejarah,
+.news-menu {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #f8f9fa;
+}
 .section-galery .row-galery {
   height: 340px;
   overflow: hidden;
@@ -591,10 +598,4 @@ header {
 
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
-}
-
-.section-sejarah {
-  padding-top: 40px;
-  padding-left: 80px;
-  padding-right: 80px;
 }
