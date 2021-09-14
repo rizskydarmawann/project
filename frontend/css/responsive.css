@@ -52,8 +52,20 @@
   .news-over {
     overflow: hidden;
     height: 82px;
-    border-bottom: 1px solid #ececec;
     margin-bottom: 30px;
+  }
+
+  .news-grid-txt a {
+    color: #fff;
+    background: #26ccca;
+    margin-top: 50px;
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-decoration-line: none;
+    transition: 0.5s;
   }
 
   .news-grid-txt ul li {
