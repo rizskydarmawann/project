@@ -148,7 +148,7 @@
 
   $(window).scroll(function () {
     // Make sticky header
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 1) {
       $(".menus").addClass("sticky");
     } else {
       $(".menus").removeClass("sticky");
@@ -156,14 +156,14 @@
   });
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 200) {
+    if ($(this).scrollTop() > 1) {
       $("#header").addClass("header-scrolled");
     } else {
       $("#header").removeClass("header-scrolled");
     }
   });
 
-  if ($(window).scrollTop() > 260) {
+  if ($(window).scrollTop() > 20) {
     $("#header").addClass("header-scrolled");
   }
 })(jQuery);
