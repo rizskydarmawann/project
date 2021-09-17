@@ -817,7 +817,6 @@ header {
 /* NEWS MENU */
 /* GALERY */
 .gallery-menu,
-.section-sejarah,
 .section-detail-news,
 .section-kontak,
 .news-menu {
@@ -1107,6 +1106,23 @@ header {
 }
 
 /* KONTAK */
+
+/* SEJARAH */
+.section-sejarah {
+  padding-top: 120px;
+}
+
+.section-sejarah img {
+  width: 100%;
+  padding-bottom: 12px;
+}
+
+.section-sejarah h2 {
+  font-weight: 700;
+  font-size: 28px;
+  padding-bottom: 10px;
+}
+/* SEJARAH */
 
 /* Mobile Navigation */
 .mobile-nav-toggle {
