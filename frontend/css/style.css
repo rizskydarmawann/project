@@ -816,10 +816,11 @@ header {
 /* NEWS MENU */
 /* GALERY */
 .gallery-menu,
+.testimoni-menu,
 .section-detail-news,
 .section-kontak,
 .news-menu {
-  padding-top: 100px;
+  padding-top: 95px;
   padding-bottom: 80px;
   background-color: #f8f9fa;
 }
@@ -914,6 +915,98 @@ header {
   line-height: 0;
 }
 /* GALERY*/
+
+/* TESTIMONI */
+
+.testimoni-menu .testimoni-col {
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
+.testimoni-menu .section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.testimoni-menu .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #5f687b;
+  position: relative;
+  z-index: 2;
+}
+
+.testimoni-menu .section-title span {
+  position: absolute;
+  top: 30px;
+  color: #f0f1f3;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+
+.testimoni-menu .testimonial-item {
+  box-sizing: content-box;
+  padding: 40px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  position: relative;
+  background: #fff;
+}
+
+.testimoni-menu .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50px;
+  border: 6px solid #fff;
+  float: left;
+  margin: 0 10px 0 0;
+}
+
+.testimoni-menu .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+.testimoni-menu .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.testimoni-menu .testimonial-item .quote-icon-left,
+.testimoni-menu .testimonial-item .quote-icon-right {
+  color: white;
+  font-size: 26px;
+}
+
+.testimoni-menu .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.testimoni-menu .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.testimoni-menu .testimonial-item p {
+  font-style: italic;
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+/* TESTIMONI */
 
 /* KONTAK */
 
