@@ -675,6 +675,36 @@ header {
 /* DETAILS NEWS */
 
 /* NEWS MENU */
+
+.news-menu .section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.news-menu .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #5f687b;
+  position: relative;
+  z-index: 2;
+}
+
+.news-menu .section-title span {
+  position: absolute;
+  top: 30px;
+  color: #f0f1f3;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
 .news-menu .news-grid {
   width: auto;
   position: relative;
@@ -816,7 +846,7 @@ header {
 /* NEWS MENU */
 /* GALERY */
 .gallery-menu,
-.testimoni-menu,
+.testimoni-menu, .kebijakan-menu,
 .section-detail-news,
 .section-kontak,
 .news-menu {
@@ -915,6 +945,40 @@ header {
   line-height: 0;
 }
 /* GALERY*/
+
+/* KEBIJAKAN */
+
+
+.kebijakan-menu .section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.kebijakan-menu .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #5f687b;
+  position: relative;
+  z-index: 2;
+}
+
+.kebijakan-menu .section-title span {
+  position: absolute;
+  top: 30px;
+  color: #f0f1f3;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+/* KEBIJAKAN */
 
 /* TESTIMONI */
 
