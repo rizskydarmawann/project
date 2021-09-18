@@ -41,14 +41,14 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  background: #00b7e5;
+  background: rgba(0, 0, 0, 0)
+    linear-gradient(to right, #0091e5 0px, #00b7e5 100%) repeat scroll 0 0 !important;
   color: #fff;
   transition: all 0.4s;
 }
 
 .back-to-top i:hover {
-  background: rgba(0, 0, 0, 0)
-    linear-gradient(to right, #0091e5 0px, #00b7e5 100%) repeat scroll 0 0 !important;
+  background: #0091e5;
   color: #fff;
 }
 
@@ -85,11 +85,10 @@ header {
 .menus.sticky {
   position: fixed;
   top: 50px;
-
   border-top: none;
   background: white;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 8px 0;
+  padding: 3px 0;
 }
 #header {
   z-index: 997;
@@ -201,8 +200,8 @@ header {
 }
 
 .carousel-item {
-  /* height: 100vh; */
-  /* min-height: 500px;
+  /* height: 300vh; */
+  /* min-height: 1000px;
   background: no-repeat scroll center scroll; */
   -webkit-background-size: cover;
   background-size: cover;
@@ -883,7 +882,38 @@ header {
 
 .news-thumbnail:hover a {
   opacity: 1;
-} /* GALERY*/
+}
+
+.gallery-menu .section-title {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+}
+
+.gallery-menu .section-title h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 0;
+  color: #5f687b;
+  position: relative;
+  z-index: 2;
+}
+
+.gallery-menu .section-title span {
+  position: absolute;
+  top: 30px;
+  color: #f0f1f3;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  font-weight: 700;
+  font-size: 52px;
+  text-transform: uppercase;
+  line-height: 0;
+}
+/* GALERY*/
 
 /* KONTAK */
 
